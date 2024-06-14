@@ -1,0 +1,57 @@
+@import "../mixins//mixins";
+.hero {
+  margin-top: 200px;
+  align-items: center;
+  text-align: center;
+  color: $textColor;
+  &__head {
+    font-size: 88px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__p {
+    font-weight: 300;
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+    line-height: 150%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    font-family: var(--first-family);
+  }
+
+  &__button {
+    @include btn;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 120px;
+    &__head {
+      font-size: 56px;
+      width: 589px;
+    }
+    &__p {
+      font-weight: 300;
+    }
+  }
+}
+@media (max-width: 376px) {
+  .hero {
+    margin-top: 120px;
+    &__head {
+      font-size: 36px;
+      width: 289px;
+    }
+    &__p {
+      font-size: 13px;
+      font-weight: 200;
+      width: 250px;
+    }
+  }
+}

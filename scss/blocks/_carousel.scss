@@ -1,0 +1,46 @@
+.carousel {
+  overflow-x: auto;
+
+  color: $textColor;
+  padding: 20px;
+  background-color: #000;
+  margin-top: 135px;
+  display: flex;
+
+  &__item {
+    padding: 10px 22px;
+    display: flex;
+
+    border-right: 2px solid #26292b;
+  }
+  &__left--span {
+    color: gray;
+    font-size: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  &__right--green {
+    color: green;
+    margin-top: 40px;
+    font-size: 10px;
+    margin-left: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  &__right--red {
+    margin-left: 20px;
+    font-size: 10px;
+    color: red;
+
+    margin-top: 40px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  &__left--head {
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+@media (max-width: 376px) {
+  .carousel {
+    margin-top: 300px;
+  }
+}

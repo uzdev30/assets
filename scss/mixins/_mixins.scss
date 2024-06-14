@@ -1,0 +1,10 @@
+@import "../colors//color";
+@mixin btn {
+  background-color: $btnColor;
+  padding: 16px 32px;
+  color: $textColor;
+  width: 190px;
+  border-radius: 6px;
+  text-align: center;
+  border: none;
+}
