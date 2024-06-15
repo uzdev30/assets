@@ -934,6 +934,7 @@ body {
   }
   .simple__head {
     font-size: 25px;
+    width: 300px;
   }
   .simple__item--head {
     font-size: 14px;
