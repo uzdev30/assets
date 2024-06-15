@@ -4,6 +4,8 @@ const rangeMo = document.getElementById("monthRg");
 const month = document.getElementById("month");
 const monthResult = document.getElementById("monthResult");
 const PermonthResult = document.getElementById("permonthResult");
+const links = document.getElementById("myLinks");
+
 monthResult.textContent = (range.value * 21) / 100;
 permonthResult.textContent = ((range.value * 21) / 100) * 12;
 const CalcFn = () => {
@@ -21,4 +23,10 @@ const changeFn = () => {
 const ChangeMo = () => {
   const b = rangeMo.value;
   month.textContent = b;
+};
+
+const classFn = () => {
+  links.classList.toggle("none");
+
+  console.log(links.className);
 };

@@ -1,0 +1,46 @@
+@import "../mixins//mixins";
+.level {
+  padding: 0 200px;
+  margin-top: 100px;
+  &__head {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 58px;
+
+    text-align: center;
+    color: black;
+    text-align: center;
+  }
+  &__btn {
+    @include btn;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .level {
+    padding: 0 20px;
+
+    &__head {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      font-size: 40px;
+      width: 600px;
+    }
+  }
+}
+@media (max-width: 376px) {
+  .level {
+    padding: 0 20px;
+
+    &__head {
+      text-align: center;
+      margin: 0 auto;
+      width: 200px;
+      margin-bottom: 20px;
+      font-size: 30px;
+      width: 300px;
+    }
+  }
+}

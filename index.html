@@ -32,18 +32,35 @@
                 src="/images///logo.svg"
                 alt=""
               />
-              <div class="header__links">
-                <a class="header__link" href="">About the Company</a>
-                <a class="header__link" href="">Services</a>
-                <a class="header__link" href=""> Profitability</a>
-                <a class="header__link" href="">How to Start </a>
+              <div class="header__links " id="myLinks">
+                <i class="fas fa-x" onclick="classFn()"></i> 
+                <div class="header__wrapper">
+
+                  <a class="header__link" href="">About the Company</a>
+                </div>
+                <div class="header__wrapper">
+
+                  <a class="header__link" href="">Services</a>
+                </div>
+                <div class="header__wrapper">
+
+                  <a class="header__link" href=""> Profitability</a>
+                </div>
+                <div class="header__wrapper">
+
+                  <a class="header__link" href="">How to Start </a>
+                </div>
+                <div class="header__active">
+              <button class="header__btn2">Investor portal</button>
+
+                </div>
               </div>
             </li>
 
             <li class="header__item">
               <button class="header__btn">Investor portal</button>
             </li>
-            <i class="fas fa-bars header__bar"></i>
+            <i onclick="classFn()" class="fas fa-bars header__bar"></i>
           </ul>
         </nav>
         <div class="hero">
@@ -278,32 +295,43 @@
           </h3>
           <ul class="compare__list">
             <li class="compare__item">
-              <div style="width: 20px; height: 186px"></div>
-              <div class="compare__div">5% per year</div>
-              <div class="compare__first compare__tablet compare__mobile"></div>
+              <div class="compare__space" ></div>
+              <div class="compare__two">
+
+                <div class="compare__first compare__tablet compare__mobile"></div>
+                <div class="compare__div">5% per year</div>
+              </div>
               <span class="compare__span">Investments in bonds</span>
             </li>
             <li class="compare__item">
-              <div style="width: 20px; height: 166px"></div>
+              <div class="compare__space2" ></div>
+              <div class="compare__two">
+                <div
+                  class="compare__second compare__tablet compare__mobile"
+                ></div>
+                <div class="compare__div">7% per annum</div>
 
-              <div class="compare__div">7% per annum</div>
-              <div
-                class="compare__second compare__tablet compare__mobile"
-              ></div>
+              </div>
+
               <span class="compare__span">Precious metals investments</span>
             </li>
             <li class="compare__item">
-              <div style="width: 20px; height: 156px"></div>
+              <div class="compare__space3" ></div>
+              <div class="compare__two">
 
-              <div class="compare__div">8% per annum</div>
-              <div class="compare__third compare__tablet compare__mobile"></div>
+                <div class="compare__third compare__tablet compare__mobile"></div>
+                <div class="compare__div">8% per annum</div>
+              </div>
               <span class="compare__span">Real estate investments</span>
             </li>
             <li class="compare__item">
-              <div class="compare__div">from 24% per annum</div>
-              <div
-                class="compare__fourth compare__tablet compare__mobile"
-              ></div>
+              <div class="compare__two">
+             
+                <div
+                  class="compare__fourth compare__tablet compare__mobile"
+                ></div>
+                <div class="compare__div">from 24% per annum</div>
+              </div> 
               <span class="compare__span"> Asset Pro </span>
             </li>
           </ul>
@@ -352,6 +380,7 @@
                 type="range"
                 id="monthRg"
                 class="calc__money--rg"
+
                 min="0"
                 max="36"
                 value="3"
@@ -374,11 +403,17 @@
               <h4 class="calc__item--h">Ваш пассивный доход</h4>
               <div class="calc__item--div">
                 <span>За весь срок вложения</span>
-                <div  id="monthResult"></div>
+                <div class="calc__item--wrapp">
+<div class="calc__item--dol">$</div>
+                  <div  id="monthResult"></div>
+                </div>
               </div>
               <div class="calc__item--div">
                 <span>Ежемесячно</span>
-                <div  id="permonthResult"></div>
+                <div class="calc__item--wrapp">
+<div class="calc__item--dol" >$</div>
+                  <div  id="permonthResult"></div>
+                </div>
               </div>
               <button class="calc__item--btn">Инвестировать</button>
             </li>
@@ -387,6 +422,27 @@
         <div class="simple">
           <h4 class="simple__head">3 simple steps to
             start generating income</h4>
+    
+            <div class="simple__line1">
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#D2DAE1" />
+                <circle cx="15" cy="15" r="5" fill="#22C96A" />
+              </svg>
+              <div class="simple__line"></div>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#D2DAE1" />
+                <circle cx="15" cy="15" r="5" fill="#22C96A" />
+              </svg>
+              <div class="simple__line"></div>
+              
+              <svg widt6h="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#D2DAE1" />
+                <circle cx="15" cy="15" r="5" fill="#22C96A" />
+              </svg>
+              <div class="simple__line"></div>
+              
+              <div></div>
+            </div>
             <ul class="simple__list">
               <li class="simple__item">
                 <h2 class="simple__item--h">
@@ -409,6 +465,68 @@
             </ul>
             <button class='simple__item--btn'>Start investing</button>
         </div>
+        <div class="source">
+          <h1 class="source__head">The main sources of profitability</h1>
+          <div class="source__div">
+            <span class="source__span">01</span>
+            <h4 class="source__div--head">Algorithmic trading</h4>
+            <p class="source__p">Using automated trading systems to make transactions in the crypto market. Our algorithms analyze the market and execute trades, providing stable income even in high volatility conditions.</p>
+          </div>
+          <hr>
+          <div class="source__div">
+            <span class="source__span">02</span>
+            <h4 class="source__div--head"> Staking</h4>
+            <p class="source__p">Proof-of-Stake (PoS) allows you to earn passive income by confirming transactions on the blockchain. Popular tokens for staking include Ethereum (ETH), Cosmos Hub (ATOM), Tezos (XTZ), and Cardano (ADA).</p>
+          </div>
+          <hr>
+          <div class="source__div">
+            <span class="source__span">03</span>
+            <h4 class="source__div--head"> Yield Farming</h4>
+            <p class="source__p">Provide liquidity to decentralized exchanges (DEXs) and receive a portion of the commissions. Yield farming offers high rewards but comes with risks of volatility and volatile losses.</p>
+          </div>
+          <hr>
+          <div class="source__div">
+            <span class="source__span">04</span>
+            <h4 class="source__div--head">Cloud Mining  </h4>
+            <p class="source__p">
+              Cloud mining simplifies the process of mining cryptocurrencies by renting computing power. This reduces capital expenditure and allows you to generate income from mining without the need to own equipment.
+            </p>
+          </div>
+          <hr>
+          <div class="source__div">
+            <span class="source__span">05</span>
+            <h4 class="source__div--head">Crypto Interest Accounts  </h4>
+            <p class="source__p">Earn interest on cryptocurrency deposits with flexible and fixed terms. Interest rates are higher than traditional banks, making this an attractive option for long-term investments.</p>
+          </div>
+          <hr>
+          <div class="source__div">
+            <span class="source__span">06</span>
+            <h4 class="source__div--head">Lending  </h4>
+            <p class="source__p">Lend crypto loans to generate income. P2P lending, centralized and decentralized lending, and margin lending are available.</p>
+          </div>
+          <hr>
+          <div class="source__div">
+            <span class="source__span">06</span>
+            <h4 class="source__div--head"> Dividend-Earning Tokens </h4>
+            <p class="source__p">Lend crypto loans to generate income. P2P lending, centralized and decentralized lending, and margin lending are available.</p>
+          </div>
+        </div>
+        <div class="level">
+          <h3 class="level__head">Reach new levels in crypto investing
+            with Assetpro</h3>
+            <button class="level__btn">Start investing</button>
+        </div>
+        <footer class="footer">
+          <img src="./images/logo.svg" alt="img">
+       <div class="footer__ps">
+
+         <p class="footer__p">This website provides an overview summary of the terms of each Product. It is neither an offer to sell nor a solicitation to buy units or shares in any Product. Any such offer or solicitation will be made solely through definitive offering documents, identified as such, which will contain information about each Product's investment objectives, terms and conditions of an investment, and may also describe risks and tax information related to an investment therein. These documents will fully qualify the information set forth on this website. The summary on this website does not claim to be complete and is fully qualified by reference to the definitive offering documents related to each Product. Do not place undue reliance on this website.</p>
+        <p class="footer__p">Shares of any Fund that are available in private placements are offered pursuant to the exemption from registration provided by Section 4(a)(2) of the Securities Act and Rule 506 of Regulation D promulgated thereunder and other exemptions of similar import in the laws of the states and jurisdictions where the offering will be made. These shares are only issued and sold directly by the Fund to accredited investors. Consequently, the shares of each such Fund, when initially sold, are restricted and subject to significant limitations on transfer and resale.</p>
+      <p class="footer__p">Prospective investors in any Fund should very carefully consider such risks prior to making any investment decision, including the fact that certain Funds may not offer a redemption program if the shares of the Fund are traded on a secondary market. The shares of Funds that are publicly quoted on the OTCQX Best Market are shares that have become "unrestricted" under Rule 144 of the Securities Act (although shares held by affiliates and insiders will be subject to additional restrictions on resales, including limitations on the number of shares that may be resold within any three-month period). Shares that have become unrestricted after the statutory holding period may be quoted on the OTCQX Best Market and may be purchased and sold throughout the trading day through any brokerage account with access to such markets.</p>
+       </div>
+       <hr>
+<span class="footer__span">© 2024 Asset Pro, All rights reserved</span>
+      </footer>
       </div>
     </div>
     <script src="./js//script.js"></script>

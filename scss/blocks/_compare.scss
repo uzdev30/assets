@@ -64,6 +64,19 @@
     height: 240px;
     background: $btnColor;
   }
+
+  &__space {
+    width: 20px;
+    height: 186px;
+  }
+  &__space2 {
+    width: 20px;
+    height: 166px;
+  }
+  &__space3 {
+    width: 20px;
+    height: 156px;
+  }
 }
 @media (max-width: 768px) {
   .compare {
@@ -96,10 +109,48 @@
       width: 70px;
     }
     &__span {
-      font-size: 7px;
+      font-size: 15px;
     }
     &__div {
-      font-size: 9px;
+      font-size: 14px;
+      margin-top: 22px;
+    }
+    &__first {
+      width: 35px;
+      height: 28px;
+    }
+    &__second {
+      width: 48px;
+      height: 28px;
+    }
+    &__third {
+      width: 55px;
+      height: 28px;
+    }
+    &__fourth {
+      width: 166px;
+      height: 28px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__two {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__space,
+    &__space2,
+    &__space3 {
+      width: 0px;
+      height: 0px;
     }
   }
 }

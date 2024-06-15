@@ -1,0 +1,31 @@
+.footer {
+  padding: 40px 200px;
+  margin-top: 120px;
+  background: black;
+
+  &__p {
+    font-family: var(--first-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #9ba1a6;
+  }
+  &__ps {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  &__span {
+    font-family: var(--first-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9ba1a6;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+}
