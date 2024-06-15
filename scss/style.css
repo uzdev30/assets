@@ -28,6 +28,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header__x {
+  display: none;
+}
 .header__item {
   list-style: none;
   display: flex;
@@ -88,10 +91,6 @@ body {
     border-top: 0.1px solid white;
   }
 }
-.fa-x {
-  display: none;
-}
-
 @media (max-width: 376px) {
   .header {
     padding: 10px;
@@ -137,6 +136,10 @@ body {
     display: block;
   }
 }
+.fa-x {
+  display: none;
+}
+
 .hero {
   margin-top: 200px;
   align-items: center;

@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-between;
   }
+  &__x {
+    display: none;
+  }
   &__item {
     list-style: none;
     display: flex;
@@ -71,9 +74,7 @@
     }
   }
 }
-.fa-x {
-  display: none;
-}
+
 @media (max-width: 376px) {
   .header {
     padding: 10px;
@@ -120,4 +121,8 @@
   .none {
     display: block;
   }
+}
+
+.fa-x {
+  display: none;
 }
