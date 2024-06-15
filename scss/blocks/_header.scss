@@ -110,6 +110,9 @@
       margin-left: 20px;
     }
     &_btn2 {
+      display: flex;
+      display: block;
+      background: white;
       padding-top: 50px;
     }
     &__link {
@@ -121,6 +124,12 @@
     &__close {
       color: white;
       visibility: visible;
+    }
+    &__bar {
+      display: block;
+    }
+    &__active {
+      display: block;
     }
   }
   .none {
